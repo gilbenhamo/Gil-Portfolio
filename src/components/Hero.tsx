@@ -1,4 +1,5 @@
 import { styles } from "../styles";
+import HeroCanvas from "./HeroCanvas";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-green-300" />
-          <div className="w-1 sm:h-80 h-40 green-gradient" />
+          <div className="w-1 sm:h-60 h-40 green-gradient" />
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
@@ -21,7 +22,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      
+    <HeroCanvas/>
     </section>
   );
 };
