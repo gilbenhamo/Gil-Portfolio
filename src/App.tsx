@@ -1,25 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <BrowserRouter>
+    <div className="relative z-0 bg-primary">
+      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div>NavBar</div>
+        <div>Hero</div>
+      </div>
+      <div>About</div>
+      <div>Experience</div>
+      <div>Tech</div>
+      <div>Works</div>
+      <div>Feedbakcs</div>
+
     </div>
+    </BrowserRouter>
   );
 }
 
