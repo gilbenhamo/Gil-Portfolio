@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
-import React from "react";
-import { styles } from "../styles";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 import { services } from "../constants";
 import { ServiceCard } from "./UI/ServiceCard";
 import { SectionWrraper } from "./hoc/SectionWrraper";
+import SectionHead from "./UI/SectionHead";
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant(0.2)}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <SectionHead pText={'Introduction'} headText={"Overview."}/>
       <motion.p
         variants={fadeIn("", "", 0.5, 0.2)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"

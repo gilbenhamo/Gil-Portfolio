@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
         <Hero/>
       </div>
       <About/>
-      <div>Experience</div>
+      <Experience/>
       <div>Tech</div>
       <div>Works</div>
       <div>Feedbakcs</div>
