@@ -1,5 +1,6 @@
 import { styles } from "../styles";
 import HeroCanvas from "./HeroCanvas";
+import { OvalNextSection } from "./UI/OvalNextSection";
 
 const Hero = () => {
   return (
@@ -23,6 +24,7 @@ const Hero = () => {
         </div>
       </div>
     <HeroCanvas/>
+    <OvalNextSection/>
     </section>
   );
 };
