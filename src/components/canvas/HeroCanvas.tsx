@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload } from "@react-three/drei";
 import { CanvasLoader } from "./CanvasLoader";
-import { Computers } from "./canvas/Computers";
+import { Computers } from "./Computers";
 
 const HeroCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);

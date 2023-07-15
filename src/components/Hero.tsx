@@ -1,5 +1,5 @@
 import { styles } from "../styles";
-import HeroCanvas from "./HeroCanvas";
+import HeroCanvas from "./canvas/HeroCanvas";
 import { OvalNextSection } from "./UI/OvalNextSection";
 
 const Hero = () => {

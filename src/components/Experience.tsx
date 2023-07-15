@@ -1,9 +1,6 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles";
 import { experiences } from "../constants";
 import {
   VerticalTimeline,
-  VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import SectionHead from "./UI/SectionHead";
 import { SectionWrraper } from "./hoc/SectionWrraper";
