@@ -37,7 +37,7 @@ const ProjectCard = ({
               onClick={() => window.open(source_code_link, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border-2 border-indigo-500"
             >
-              <img src={github} className="w-3/4 h-3/4 object-contain" />
+              <img src={github} alt="git" className="w-3/4 h-3/4 object-contain" />
             </div>
           </div>
         </div>
