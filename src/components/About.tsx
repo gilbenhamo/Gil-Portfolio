@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { services } from "../constants";
 import { ServiceCard } from "./UI/ServiceCard";
-import { SectionWrraper } from "./hoc/SectionWrraper";
+import { SectionWrapper } from "./hoc/SectionWrapper";
 import SectionHead from "./UI/SectionHead";
 
 const About = () => {
@@ -28,4 +28,4 @@ const About = () => {
   );
 };
 
-export default SectionWrraper(About, "about");
+export default SectionWrapper(About, "about");

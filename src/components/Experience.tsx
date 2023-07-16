@@ -3,7 +3,7 @@ import {
   VerticalTimeline,
 } from "react-vertical-timeline-component";
 import SectionHead from "./UI/SectionHead";
-import { SectionWrraper } from "./hoc/SectionWrraper";
+import { SectionWrapper } from "./hoc/SectionWrapper";
 import ExperienceCard from "./UI/ExperienceCard";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -20,4 +20,4 @@ const Experience = () => (
   </>
 );
 
-export default SectionWrraper(Experience, "work");
+export default SectionWrapper(Experience, "work");

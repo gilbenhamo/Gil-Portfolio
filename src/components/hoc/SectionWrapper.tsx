@@ -3,7 +3,7 @@ import { ComponentType } from "react";
 import { staggerContainer } from "../../utils/motion";
 import { styles } from "../../styles";
 
-export const SectionWrraper = (Component: ComponentType, idName: string) =>
+export const SectionWrapper = (Component: ComponentType, idName: string) =>
   function HOC() {
     return (
       <motion.section

@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionWrraper } from "./hoc/SectionWrraper";
+import { SectionWrapper } from "./hoc/SectionWrapper";
 import { technologies } from "../constants";
 import BallCanvas from "./canvas/BallCanvas";
 
@@ -15,4 +15,4 @@ const Tech = () => {
   );
 };
 
-export default SectionWrraper(Tech, "Tech");
+export default SectionWrapper(Tech, "Tech");
