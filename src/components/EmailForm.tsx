@@ -28,7 +28,7 @@ const EmailForm = ({ loading }: { loading: boolean }) => {
     console.log("hey");
   };
   return (
-    <form className="mt-12 flex flex-col gap-8" onSubmit={onSubmitHandler}>
+    <form className="mt-12 flex flex-col gap-8 items-center" onSubmit={onSubmitHandler}>
       <FormInputElement
         label={"Your Name"}
         name={"name"}
@@ -48,7 +48,7 @@ const EmailForm = ({ loading }: { loading: boolean }) => {
       <FormTextArea
         label={"Your Message"}
         name={"message"}
-        rows={7}
+        rows={6}
         value={dataEntered.message}
         onChnage={onChangeHandler}
         placeholder={"What do you want to say?"}

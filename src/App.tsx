@@ -7,6 +7,7 @@ import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
+import StartsCanvas from "./components/canvas/StartsCanvas";
 
 const App = () => {
   return (
@@ -21,7 +22,10 @@ const App = () => {
         <Experience />
         <Works />
         <Feedbacks />
-        <Contact />
+        <div className="relative z-0">
+          <Contact />
+          <StartsCanvas />
+        </div>
       </div>
     </BrowserRouter>
   );

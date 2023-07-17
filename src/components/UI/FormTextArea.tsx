@@ -16,9 +16,10 @@ interface Props {
     label
   }: Props) => {
     return (
-      <label className="flex flex-col">
+      <label className="flex flex-col md:w-6/12 w-full lg:w-8/12">
         <span className="text-white font-medium mb-4">{label}</span>
         <textarea
+        required
         rows={rows}
           name={name}
           value={value}
