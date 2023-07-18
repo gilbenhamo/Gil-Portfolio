@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FormInputElement from "./UI/FormInputElement";
 import FormTextArea from "./UI/FormTextArea";
-
+import emailjs from "@emailjs/browser";
 interface EmailFormFields {
   name: string;
   email: string;
@@ -14,8 +14,9 @@ const initialState = {
   message: "",
 };
 
-const EmailForm = ({ loading }: { loading: boolean }) => {
+const EmailForm = () => {
   const [dataEntered, setDataEntered] = useState<EmailFormFields>(initialState);
+  const [loading, setLoading] = useState(false);
 
   const onChangeHandler = (event: any) => {
     setDataEntered((prevstate) => {
@@ -25,10 +26,37 @@ const EmailForm = ({ loading }: { loading: boolean }) => {
   };
   const onSubmitHandler = (event: any) => {
     event.preventDefault();
-    console.log("hey");
+    setLoading(true);
+    emailjs
+      .send(
+        "serviceid",
+        "template",
+        {
+          from_name: dataEntered.name,
+          to_name: "Gil",
+          from_email: dataEntered.email,
+          to_email: "gilbh859@gmail.com",
+          message: dataEntered.message,
+        },
+        "pubkey"
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you, i will be in touch!");
+          setDataEntered(initialState);
+        },
+        (error) => {setLoading(false);
+        console.log("Error in sending email!")
+        alert('Something went wrong. :(')
+        }
+      );
   };
   return (
-    <form className="mt-12 flex flex-col gap-8 items-center" onSubmit={onSubmitHandler}>
+    <form
+      className="mt-12 flex flex-col gap-8 items-center"
+      onSubmit={onSubmitHandler}
+    >
       <FormInputElement
         label={"Your Name"}
         name={"name"}

@@ -1,5 +1,5 @@
 import { styles } from "../styles";
-import HeroCanvas from "./canvas/HeroCanvas";
+import HeroCanvas2 from "./canvas/HeroCanvas2";
 import { OvalNextSection } from "./UI/OvalNextSection";
 
 const Hero = () => {
@@ -18,13 +18,14 @@ const Hero = () => {
             <span className=" text-green-300"> Gil</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Recently gradute software engineer, <br className="sm:block hidden"/>
-            Full stack developer 
+            Recently gradute software engineer,{" "}
+            <br className="sm:block hidden" />
+            Full stack developer
           </p>
         </div>
       </div>
-    <HeroCanvas/>
-    <OvalNextSection/>
+      <HeroCanvas2 />
+      <OvalNextSection />
     </section>
   );
 };

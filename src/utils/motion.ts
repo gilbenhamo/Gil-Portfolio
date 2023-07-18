@@ -74,6 +74,28 @@ export const textVariant = (delay?:number) => {
       },
     };
   };
+  export const slideFadeIn = (direction:string, type:any, delay:number, duration:number) => {
+    return {
+      hidden: {
+        opacity:0,
+        x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
+        y: direction === "up" ? "100%" : direction === "down" ? "100%" : 0,
+      },
+      show: {
+        x: 0,
+        y: 0,
+        opacity:1,
+
+        transition: {
+          type: type,
+          delay: delay,
+          duration: duration,
+          ease: "easeIn",
+        },
+      },
+    };
+  };
+  
   
   export const staggerContainer = (staggerChildren?:any, delayChildren?:number) => {
     return {
