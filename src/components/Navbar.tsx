@@ -5,13 +5,15 @@ import { logo } from "../assets";
 import { navLinks } from "../constants";
 import { Twirl } from "hamburger-react";
 import { MobileNavLink } from "./MobileNavLink";
+import { motion } from "framer-motion";
+import { while_hover_repeat } from "../utils/motion";
 
 export const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [active, setActive] = useState("");
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-green_p`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -23,22 +25,27 @@ export const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
+          <motion.p
+            whileHover={while_hover_repeat}
+            className="text-white_p text-[18px] font-bold cursor-pointer flex"
+          >
             Gil Ben Hamo &nbsp;
-            <span className="sm:block hidden">| &nbsp;Software Engineer</span>
-          </p>
+            <span className="md:block hidden">| &nbsp;Software Engineer</span>
+          </motion.p>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
-            <li
+            <motion.li
               key={link.id}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.7 }}
               className={`${
-                active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === link.title ? "text-blue_p" : "text-secondary"
+              } hover:text-green_blue_p text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}> {link.title} </a>
-            </li>
+            </motion.li>
           ))}
         </ul>
 

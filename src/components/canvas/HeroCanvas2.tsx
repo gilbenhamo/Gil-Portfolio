@@ -9,7 +9,7 @@ import {
 import { CanvasLoader } from "./CanvasLoader";
 import { Computers } from "./Computers";
 import { motion } from "framer-motion";
-import { moon } from "../../assets";
+import { gil, moon } from "../../assets";
 
 const HeroCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -33,7 +33,7 @@ const HeroCanvas = () => {
           <directionalLight position={[3, 2, 1]} />
           <Sphere args={[1, 100, 200]} scale={1.5} position={[0, -1, 0]}>
             <MeshDistortMaterial
-              color="#3d1c56"
+              color="#8EE4AF"
               attach="material"
               distort={0.5}
               speed={2}
@@ -58,7 +58,7 @@ const HeroCanvas = () => {
           }}
           className="h-[400px] xs:h-[500px]"
           src={moon}
-          alt="moon"
+          alt="gil"
         />
       </motion.div>
     </>
