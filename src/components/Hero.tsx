@@ -1,35 +1,31 @@
+import { motion } from "framer-motion";
 import { styles } from "../styles";
 import HeroCanvas2 from "./canvas/HeroCanvas2";
+import { SectionWrapper } from "./hoc/SectionWrapper";
+import HeroHeadText from "./UI/HeroHeadText";
 import { OvalNextSection } from "./UI/OvalNextSection";
+import { slideFadeIn, slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div
-        className={`px-6 absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start justify-center gap-5 `}
+    <div className="relative flex-col flex h-screen xl:grid xl:grid-cols-2">
+      <motion.div
+        initial={{ scale: 0 }}
+        animate={{
+          scale: 1,
+          transition: {
+            type: "spring",
+            delay: 0.5,
+            duration: 0.5,
+          },
+        }}
+        className="flex justify-center items-center"
       >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-green-300" />
-          <div className="w-1 sm:h-60 h-40 green-gradient" />
-        </div>
-        <div className="sm:backdrop-blur-[0px] backdrop-blur-sm">
-          <h1 className={`${styles.heroHeadText}`}>
-            Hey, I'm
-            <span className=" text-[#05386b]"> Gil</span>
-          </h1>
-          <p className={`${styles.heroSubText} `}>
-            Graduted software engineer,&nbsp;
-            <br />
-            with a specialization in cyber&nbsp;
-            <br className="sm:block hidden"/>
-            and knowledge across multiple fields.
-          </p>
-        </div>
-      </div>
+        <HeroHeadText />
+      </motion.div>
       <HeroCanvas2 />
       <OvalNextSection />
-    </section>
+    </div>
   );
 };
-
 export default Hero;

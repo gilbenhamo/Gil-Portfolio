@@ -136,3 +136,33 @@ export const while_hover_repeat : any = {
     repeatType: "mirror",
   },
 };
+
+export const staggerContainer2= (
+  staggerChildren?: any,
+  delayChildren?: number
+) => {
+  return {
+    hidden: {
+    },
+    show: {
+      transition: {
+        delayChildren:2,
+        duration:2,
+        when: "beforeChildren",
+        staggerChildren: 1,
+      },
+    },
+  };
+};
+
+export const staggerChildren = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  show: {
+    x: 0,
+    opacity: 1,
+  },
+
+}

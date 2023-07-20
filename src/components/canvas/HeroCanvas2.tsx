@@ -25,13 +25,14 @@ const HeroCanvas = () => {
     };
   }, []);
   return (
-    <>
-      <Canvas>
+    <div className="relative h-full">
+    
+      <Canvas className="">
         <Suspense fallback={null}>
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={1} />
           <directionalLight position={[3, 2, 1]} />
-          <Sphere args={[1, 100, 200]} scale={1.5} position={[0, -1, 0]}>
+          <Sphere args={[1, 100, 200]} scale={2} position={[0, 0.2, 0]}>
             <MeshDistortMaterial
               color="#05386B"
               attach="material"
@@ -45,7 +46,7 @@ const HeroCanvas = () => {
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", delay: 1.5, duration: 1 }}
-        className="absolute mb-24 xs:mb-52 bottom-10 h-96 w-full flex justify-center items-center"
+        className="absolute pb-20 top-0 h-full flex justify-center items-center w-full "
       >
         <motion.img
           animate={{
@@ -57,11 +58,11 @@ const HeroCanvas = () => {
             repeatType: "mirror",
           }}
           className="h-[400px] xs:h-[500px]"
-          src={moon}
+          src={gil}
           alt="gil"
         />
       </motion.div>
-    </>
+    </div>
   );
 };
 
