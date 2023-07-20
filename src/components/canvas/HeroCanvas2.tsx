@@ -33,7 +33,7 @@ const HeroCanvas = () => {
           <directionalLight position={[3, 2, 1]} />
           <Sphere args={[1, 100, 200]} scale={1.5} position={[0, -1, 0]}>
             <MeshDistortMaterial
-              color="#8EE4AF"
+              color="#05386B"
               attach="material"
               distort={0.5}
               speed={2}

@@ -11,7 +11,6 @@ module.exports = {
         "black-100": "#100d25",
         "black-200": "#090325",
         "white-100": "#f3f3f3",
-
         blue_p:         "#05386B",
         green_blue_p:   "#379683",
         green_p:        "#5CDB95",
@@ -23,7 +22,7 @@ module.exports = {
       },
       screens: {
         xs: "450px",
-        'sh': {'raw': '(min-height: 500px)'}
+        // 'sh': {'raw': '(min-height: 500px)'}
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg6.png')",
