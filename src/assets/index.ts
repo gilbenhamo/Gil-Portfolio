@@ -31,6 +31,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import moon from './moon.png'
 import gil from './gil.png'
+import graduation from './icons/graduation.svg'
+import award from './icons/award.svg'
+import code from './icons/code.svg'
+import vision from './icons/vision.svg'
+
 
 export {
   logo,
@@ -62,5 +67,9 @@ export {
   jobit,
   tripguide,
   moon,
-  gil
+  gil,
+  graduation,
+  award,
+  code,
+  vision
 };

@@ -21,6 +21,10 @@ import {
     jobit,
     tripguide,
     threejs,
+    graduation,
+    award,
+    code,
+    vision
   } from "../assets";
   
   export const navLinks = [
@@ -40,32 +44,25 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "B.Sc. in Software Engineering",
+      icon: graduation ,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: `Valedictorian & Summa cum laude`,
+      icon: award,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Full-Stack Developer",
+      icon: code,
     },
     {
-      title: "Content Creator",
-      icon: creator,
+      title: "Computer Vision",
+      icon: vision,
     },
   ];
   
   const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
+
     {
       name: "JavaScript",
       icon: javascript,
@@ -91,25 +88,33 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
       name: "git",
       icon: git,
     },
-    {
-      name: "figma",
-      icon: figma,
-    },
-    {
-      name: "docker",
-      icon: docker,
-    },
+    // {
+    //   name: "MongoDB",
+    //   icon: mongodb,
+    // },
+    // {
+    //   name: "Three JS",
+    //   icon: threejs,
+    // },
+    // {
+    //   name: "figma",
+    //   icon: figma,
+    // },
+    // {
+    //   name: "docker",
+    //   icon: docker,
+    // },
+    // {
+    //   name: "HTML 5",
+    //   icon: html,
+    // },
+    // {
+    //   name: "CSS 3",
+    //   icon: css,
+    // },
   ];
   
   const experiences = [
