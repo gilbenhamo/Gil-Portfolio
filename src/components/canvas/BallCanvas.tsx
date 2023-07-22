@@ -1,7 +1,6 @@
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload } from "@react-three/drei";
-import { CanvasLoader } from "./CanvasLoader";
 import Ball from "./Ball";
 
 

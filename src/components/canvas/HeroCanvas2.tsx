@@ -1,15 +1,8 @@
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import {
-  MeshDistortMaterial,
-  OrbitControls,
-  Preload,
-  Sphere,
-} from "@react-three/drei";
-import { CanvasLoader } from "./CanvasLoader";
-import { Computers } from "./Computers";
+import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
 import { motion } from "framer-motion";
-import { gil, moon } from "../../assets";
+import { gil } from "../../assets";
 
 const HeroCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -26,7 +19,6 @@ const HeroCanvas = () => {
   }, []);
   return (
     <div className="relative h-full">
-    
       <Canvas className="">
         <Suspense fallback={null}>
           <OrbitControls enableZoom={false} />
@@ -34,7 +26,7 @@ const HeroCanvas = () => {
           <directionalLight position={[3, 2, 1]} />
           <Sphere args={[1, 100, 200]} scale={2} position={[0, 0.2, 0]}>
             <MeshDistortMaterial
-              color="#05386B"
+              color="#374785"
               attach="material"
               distort={0.5}
               speed={2}

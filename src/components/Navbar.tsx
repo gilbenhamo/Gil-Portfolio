@@ -27,7 +27,7 @@ export const Navbar = () => {
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <motion.p
             whileHover={while_hover_repeat}
-            className="text-white_p text-[18px] font-bold cursor-pointer flex"
+            className="text-white_p text-[18px] font-bold cursor-pointer flex hover:text-c2"
           >
             Gil Ben Hamo &nbsp;
             <span className="md:block hidden">| &nbsp;Software Engineer</span>
@@ -41,7 +41,7 @@ export const Navbar = () => {
               whileTap={{ scale: 0.7 }}
               className={`${
                 active === link.title ? "text-blue_p" : "text-secondary"
-              } hover:text-green_blue_p text-[18px] font-medium cursor-pointer`}
+              } hover:text-c2 text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               <a href={`#${link.id}`}> {link.title} </a>

@@ -11,7 +11,7 @@ const HeroHeadText = () => {
   const variants = staggerContainer2();
   return (
     <div
-      className={`px-8 mt-28 sm:mt-24 xl:mt-0 inset-0 max-w-7xl mx-auto flex flex-row justify-center items-center gap-2 `}
+      className={`sm:px-8 mt-28 sm:mt-24 xl:mt-0 inset-0 max-w-7xl mx-auto flex flex-row justify-center items-center gap-2 `}
     >
       <div className="flex flex-col justify-center items-center mt-5">
         <div className="w-5 h-5 rounded-full bg-green-300" />
@@ -29,7 +29,7 @@ const HeroHeadText = () => {
           className={`${styles.heroSubText} `}
         >
           <motion.li className="list-none" variants={staggerChildren}>
-            Graduted software engineer,&nbsp;
+            Graduted Software Engineer,&nbsp;
           </motion.li>
           <motion.li className="list-none" variants={staggerChildren}>
             with a specialization in cyber&nbsp;

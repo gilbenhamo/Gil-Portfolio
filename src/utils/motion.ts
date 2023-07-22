@@ -1,5 +1,3 @@
-import { VariantLabels } from "framer-motion";
-
 export const textVariant = (delay?: number) => {
   return {
     hidden: {
@@ -128,7 +126,7 @@ export const staggerContainer = (
   };
 };
 
-export const while_hover_repeat : any = {
+export const while_hover_repeat: any = {
   scale: [1, 1.05],
   transition: {
     duration: 1,
@@ -137,17 +135,16 @@ export const while_hover_repeat : any = {
   },
 };
 
-export const staggerContainer2= (
+export const staggerContainer2 = (
   staggerChildren?: any,
   delayChildren?: number
 ) => {
   return {
-    hidden: {
-    },
+    hidden: {},
     show: {
       transition: {
-        delayChildren:2,
-        duration:2,
+        delayChildren: 2,
+        duration: 2,
         when: "beforeChildren",
         staggerChildren: 1,
       },
@@ -164,5 +161,4 @@ export const staggerChildren = {
     x: 0,
     opacity: 1,
   },
-
-}
+};

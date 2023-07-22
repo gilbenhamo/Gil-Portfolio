@@ -1,4 +1,3 @@
-import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { SectionWrapper } from "./hoc/SectionWrapper";
 import SectionHead from "./UI/SectionHead";
