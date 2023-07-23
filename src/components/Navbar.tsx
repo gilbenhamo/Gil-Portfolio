@@ -24,7 +24,7 @@ export const Navbar = () => {
             setActive("");
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          {/* <img src={logo} alt="logo" className="w-9 h-9 object-contain" /> */}
           <motion.p
             whileHover={while_hover_repeat}
             className="text-white_p text-[18px] font-bold cursor-pointer flex hover:text-c2"
@@ -48,7 +48,7 @@ export const Navbar = () => {
             </motion.li>
           ))}
         </ul>
-
+        {/* Mobile Scetion*/}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <Twirl rounded toggled={isOpen} toggle={setOpen} />
           <MobileNavLink

@@ -31,6 +31,7 @@ import gilo from "./company/gilo.png";
 import vzou from "./vzou.png";
 import helpo from "./helpo.png";
 import delivery from "./delivery.png";
+import easyshop from "./easyshop.png";
 
 import moon from './moon.png'
 import gil from './gil.png'
@@ -69,7 +70,7 @@ export {
   starbucks,
   tesla,
   vzou,
-  delivery as tripguide,
+  delivery,
   moon,
   gil,
   graduation,
@@ -79,5 +80,6 @@ export {
   sce,
   gilo,
   helpo,
-  link
+  link,
+  easyshop
 };

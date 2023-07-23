@@ -7,7 +7,6 @@ import {
   nodejs,
   git,
   vzou,
-  tripguide,
   graduation,
   award,
   code,
@@ -15,6 +14,8 @@ import {
   sce,
   gilo,
   helpo,
+  delivery,
+  easyshop
 } from "../assets";
 
 export const navLinks = [
@@ -219,6 +220,18 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
+    name: "Easy Shop",
+    description: `Web platform that allows to any local bussines to create and manage is own e-Commerce shop`,
+    tags: [
+      {
+        name: "Django",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: easyshop,
+    source_code_link: "https://github.com/",
+  },
+  {
     name: "Delivery Simulator",
     description: `App that simulates tracking system of packages between several post offices and
       distribution centers. Includes use of Multi-Threading, GUI and various design patterns.`,
@@ -228,7 +241,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: delivery,
     source_code_link: "https://github.com/",
   },
 ];
