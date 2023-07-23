@@ -21,7 +21,8 @@ const ProjectCard = ({
   index,
 }: Props) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", 0.5 + index * 0.5, 0.75)}>
+    <motion.div
+    variants={fadeIn("up", "spring", 0.5 + index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 20, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -30,7 +31,7 @@ const ProjectCard = ({
           <img
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-full h-full rounded-2xl"
           />
           <div className="absolute inset-0 flex m-3 card-img_hover justify-end ">
             <div

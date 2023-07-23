@@ -8,6 +8,7 @@ import Works from "./components/Works";
 import Feedbacks from "./components/Feedbacks";
 import Contact from "./components/Contact";
 import StartsCanvas from "./components/canvas/StartsCanvas";
+import Projects from "./components/Projects";
 
 const App = () => {
   return (
@@ -19,8 +20,8 @@ const App = () => {
         </div>
         <About />
         <Tech />
+        <Projects />
         <Experience />
-        <Works />
         <Feedbacks />
         {/* <div className="relative z-0">
           <Contact />

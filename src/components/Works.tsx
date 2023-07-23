@@ -4,12 +4,13 @@ import SectionHead from "./UI/SectionHead";
 import { fadeIn } from "../utils/motion";
 import { projects } from "../constants";
 import ProjectCard from "./UI/ProjectCard";
+import Projects from "./Projects";
 
 const Works = () => {
   return (
     <>
       <SectionHead pText={"My Work"} headText={"Projects"} />
-      <div className="w-full flex">
+      {/* <div className="w-full flex">
         <motion.p
         variants={fadeIn("right","",0.2,1)}
         className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]">
@@ -28,7 +29,8 @@ const Works = () => {
           />
         ))
       }
-      </div>
+      </div> */}
+      <Projects/>
     </>
   );
 };

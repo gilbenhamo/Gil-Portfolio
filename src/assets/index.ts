@@ -25,17 +25,22 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import sce from "./company/sce.webp"
+import gilo from "./company/gilo.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import vzou from "./vzou.png";
+import helpo from "./helpo.png";
+import delivery from "./delivery.png";
+
 import moon from './moon.png'
 import gil from './gil.png'
+
 import graduation from './icons/graduation.svg'
 import award from './icons/award.svg'
 import code from './icons/code.svg'
 import vision from './icons/vision.svg'
 
+import link from './icons/link.png'
 
 export {
   logo,
@@ -63,13 +68,16 @@ export {
   shopify,
   starbucks,
   tesla,
-  carrent,
-  jobit,
-  tripguide,
+  vzou,
+  delivery as tripguide,
   moon,
   gil,
   graduation,
   award,
   code,
-  vision
+  vision,
+  sce,
+  gilo,
+  helpo,
+  link
 };
