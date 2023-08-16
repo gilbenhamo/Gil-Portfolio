@@ -24,7 +24,7 @@ const HeroCanvas = () => {
           <OrbitControls enableZoom={false} />
           <ambientLight intensity={1} />
           <directionalLight position={[3, 2, 1]} />
-          <Sphere args={[1, 100, 200]} scale={2} position={[0, 0.2, 0]}>
+          <Sphere args={[1, 100, 200]} scale={2} position={[0, 0.2, 0]} >
             <MeshDistortMaterial
               color="#374785"
               attach="material"
