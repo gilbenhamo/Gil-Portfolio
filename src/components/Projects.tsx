@@ -18,7 +18,7 @@ const Projects = () => {
   return (
     <>
       <SectionHead pText={"My Work"} headText={"Projects"} />
-      <section id="projects">
+      <section >
         <div className="w-full flex">
           <motion.p
             variants={fadeIn("right", "", 0.2, 1)}
@@ -70,4 +70,4 @@ const Projects = () => {
   );
 };
 
-export default SectionWrapper(Projects, "");
+export default SectionWrapper(Projects, "projects");

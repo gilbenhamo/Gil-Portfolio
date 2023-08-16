@@ -35,7 +35,7 @@ const HeroCanvas = () => {
         </Suspense>
       </Canvas>
       <motion.div
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: 100, opacity: 0 ,scale:0.8}}
         animate={{ y: 0, opacity: 1 }}
         transition={{ type: "spring", delay: 1.5, duration: 1 }}
         className="absolute pb-20 top-0 h-full flex justify-center items-center w-full "
