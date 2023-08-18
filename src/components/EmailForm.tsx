@@ -27,36 +27,39 @@ const EmailForm = () => {
   };
   const onSubmitHandler = (event: any) => {
     event.preventDefault();
-    setLoading(true);
-    emailjs
-      .send(
-        "serviceid",
-        "template",
-        {
-          from_name: dataEntered.name,
-          to_name: "Gil",
-          from_email: dataEntered.email,
-          to_email: "gilbh859@gmail.com",
-          message: dataEntered.message,
-        },
-        "pubkey"
-      )
-      .then(
-        () => {
-          setLoading(false);
-          alert("Thank you, i will be in touch!");
-          setDataEntered(initialState);
-        },
-        (error) => {setLoading(false);
-        console.log("Error in sending email!")
-        alert('Something went wrong. :(')
-        }
-      );
+    // setLoading(true);
+    // emailjs
+    //   .send(
+    //     "serviceid",
+    //     "template",
+    //     {
+    //       from_name: dataEntered.name,
+    //       to_name: "Gil",
+    //       from_email: dataEntered.email,
+    //       to_email: "gilbh859@gmail.com",
+    //       message: dataEntered.message,
+    //     },
+    //     "pubkey"
+    //   )
+    //   .then(
+    //     () => {
+    //       setLoading(false);
+    //       alert("Thank you, i will be in touch!");
+    //       setDataEntered(initialState);
+    //     },
+    //     (error) => {
+    //       setLoading(false);
+    //       console.log("Error in sending email!");
+    //       alert("Something went wrong. :(");
+    //     }
+    //   );
   };
   return (
     <form
+      name="contact"
+      method="POST"
       className="mt-12 flex flex-col gap-8 items-center"
-      // onSubmit={onSubmitHandler}
+      onSubmit={onSubmitHandler}
       data-netlify="true"
     >
       <FormInputElement
@@ -84,7 +87,7 @@ const EmailForm = () => {
         placeholder={"What do you want to say?"}
       />
       <motion.button
-        whileTap={{scale:0.8}}
+        whileTap={{ scale: 0.8 }}
         type="submit"
         className="bg-c2 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-2xl"
       >
