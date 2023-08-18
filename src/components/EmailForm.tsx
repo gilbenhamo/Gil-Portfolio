@@ -64,6 +64,7 @@ const EmailForm = () => {
   return (
     <form
       name="contactV2"
+      method="POST"
       className="mt-12 flex flex-col gap-8 items-center"
       data-netlify="true"
     >
