@@ -67,7 +67,7 @@ const EmailForm = () => {
       name="contact"
       method="POST"
       className="mt-12 flex flex-col gap-8 items-center"
-     //onSubmit={onSubmitHandler}
+     onSubmit={onSubmitHandler}
       data-netlify="true"
     >
       <input type="hidden" name="form-name" value="contact" />
