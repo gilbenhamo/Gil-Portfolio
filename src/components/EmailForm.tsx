@@ -56,21 +56,18 @@ const EmailForm = () => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body:JSON.stringify(dataEntered)
+      body: JSON.stringify(dataEntered),
     })
       .then(() => alert("Success!"))
-      .catch(error => alert(error));
-
+      .catch((error) => alert(error));
   };
   return (
     <form
-      name="contact"
-      method="POST"
+      name="contactV2"
       className="mt-12 flex flex-col gap-8 items-center"
-     onSubmit={onSubmitHandler}
       data-netlify="true"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value="contactV2" />
 
       <FormInputElement
         label={"Your Name"}
