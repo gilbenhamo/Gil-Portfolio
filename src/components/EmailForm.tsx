@@ -53,6 +53,14 @@ const EmailForm = () => {
     //       alert("Something went wrong. :(");
     //     }
     //   );
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body:JSON.stringify(dataEntered)
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
   };
   return (
     <form
