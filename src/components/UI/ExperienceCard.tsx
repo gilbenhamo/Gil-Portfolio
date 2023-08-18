@@ -1,7 +1,6 @@
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 import { experienceType } from "../../utils/types";
-import { motion } from "framer-motion";
 
 const ExperienceCard = ({ experience }: { experience: experienceType }) => {
   return (

@@ -25,7 +25,7 @@ const FormInputElement = ({
         value={value}
         onChange={onChnage}
         placeholder={placeholder}
-        className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-2xl outline-none border-none font font-medium"
+        className="bg-c1 py-4 px-6 placeholder:text-secondary rounded-2xl outline-none border-none font font-medium"
       />
     </label>
   );

@@ -1,9 +1,8 @@
-import React from "react";
 import { SectionWrapper } from "./hoc/SectionWrapper";
 import { technologies } from "../constants";
 import BallCanvas from "./canvas/BallCanvas";
 import { motion } from "framer-motion";
-import { slideFadeIn, slideIn } from "../utils/motion";
+import { slideFadeIn } from "../utils/motion";
 
 const Tech = () => {
   return (

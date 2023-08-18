@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { github, link, vzou } from "../../assets";
+import { github, link } from "../../assets";
 import CircleTileButton from "./CircleTileButton";
 
 interface Props {

@@ -1,10 +1,7 @@
 import { motion } from "framer-motion";
-import { styles } from "../styles";
 import HeroCanvas2 from "./canvas/HeroCanvas2";
-import { SectionWrapper } from "./hoc/SectionWrapper";
 import HeroHeadText from "./UI/HeroHeadText";
 import { OvalNextSection } from "./UI/OvalNextSection";
-import { slideFadeIn, slideIn } from "../utils/motion";
 
 const Hero = () => {
   return (

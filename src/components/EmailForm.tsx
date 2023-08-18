@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormInputElement from "./UI/FormInputElement";
 import FormTextArea from "./UI/FormTextArea";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 interface EmailFormFields {
   name: string;
   email: string;
@@ -55,7 +56,8 @@ const EmailForm = () => {
   return (
     <form
       className="mt-12 flex flex-col gap-8 items-center"
-      onSubmit={onSubmitHandler}
+      // onSubmit={onSubmitHandler}
+      data-netlify="true"
     >
       <FormInputElement
         label={"Your Name"}
@@ -81,12 +83,13 @@ const EmailForm = () => {
         onChnage={onChangeHandler}
         placeholder={"What do you want to say?"}
       />
-      <button
+      <motion.button
+        whileTap={{scale:0.8}}
         type="submit"
-        className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-2xl"
+        className="bg-c2 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-2xl"
       >
         {loading ? "Sending..." : "Send"}
-      </button>
+      </motion.button>
     </form>
   );
 };

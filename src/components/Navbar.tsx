@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
-import { logo } from "../assets";
 import { navLinks } from "../constants";
 import { Twirl } from "hamburger-react";
 import { MobileNavLink } from "./MobileNavLink";
